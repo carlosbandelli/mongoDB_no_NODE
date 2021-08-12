@@ -1,0 +1,22 @@
+Mongo DB
+Entre no site do mongo db instalar ele, não instalar o compass na precisa
+depois de instalar pre ir no vaiaveis de ambiente e adcionar no path o caminho
+o caminho a cer adicionado sera esse:
+
+C:\Program Files\MongoDB\Server\5.0\bin
+
+depois de adicionar na variaveis de ambiente
+
+rodar o cmd
+
+com o comando mongo
+
+caso o comando mongo não funcione, voce abra outra CMD, mais deixa o que voce utilizou 
+mongo como comando aberto
+
+eutilizar o comando 
+
+
+mongod
+
+assim voce vai estar aberto o serviço porem nao pode fechar o cmd que foi usado o comando mongod
