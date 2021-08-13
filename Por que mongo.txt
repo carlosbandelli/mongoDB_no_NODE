@@ -1,0 +1,61 @@
+Como funciona o mongo?
+Não existe tabela no Mongo, por que quando voce cria uma tabela no mysql voce esta restringindo
+os seus dados que estão naquela tabela, a ter exatamento o mesmo numeros de campos, por exemplo se eu 
+crio uma tabela no MySQL quem tem um campo id, email, nome e senha todo registro que eu for colocar naquela tabela
+tem que ter obrigatoriamente esses mesmos campos nem que sejam vazios, no mongodb isso nao existe.
+O mongo tem coleções 
+coleções com se fosse pastas e dentro da pastas tem documentos e seriam os dados
+Como mongo organiza os dados dele:
+Ele organiza em arquivos Json para ser masi preciso no formato Bson
+Exemplo:
+
+{
+name: "al",
+age: 18,
+status: "D",
+groups:["politics","news"]
+}
+
+Como funciona um relacionamento dentro do mongo com Herança eu insero um dado dentreo de outro
+Exemplo
+var b = {
+    nome: "Sea of THieves",
+    preco: 90,
+    dev:{
+        nome: "Microsoft",
+        email: "asdasd@asasdsa.com.br" <-- herança
+    },
+    plat: ["Xbox", "Windows"] <-- herança
+}
+O mongoDB para que ele?
+Ele é feito principamente para aplicações onde voce tem dados que são muito flexiveis
+
+
+
+Teorema C.A.P.
+
+Consistency = Consistencia
+Availability = Disponibilidade
+Partition-Tolerance = Tolerancia de Partição
+ Existe 3 pilares principais que envolvem Banco de dados
+
+Consistencia:
+Mandar o banco de dados cadastrar algo e ter a garantia que isso foi cadastrado
+OU seja: Voce faz uma query inserindo algo no Banco e 1 milisegundo depois que essa query acabou voce faz um consulta
+esse informção que vo inseriu vai estar lá
+
+Tolerancia a partição:
+Existem alguns aplicações que tem volume de dados gigantesco, vamos supor que voce está fazendo um aplicação enorme
+Conceito seguinte: Que uma ou mais partiçoes estiverem fora do ar, se voce mandar
+um dado para ser salvo por exemplo POrtition-Tolerance ele garante que esse daos vai ser salvo
+
+Disponibilidade:
+E basicamente, voce faz um query um select e voce ter garantia que seu servido vai responder nem que seja faladno assim o servidor esta fora do ar
+mais ele vai responder. 
+outra coisa se voce mandar um select ele selecionar os dados e acontecer alguma falha durante a seleção do dados ele vai falar "Ocorreu uma falha durante a seleção"
+Disponibilidade ´eisso garantir que voce vai receber sempre uma resposta no seu servidor
+
+
+
+
+

@@ -1,0 +1,10 @@
+Depois de salvar para verificar o banco de dados do mongo
+Se o mongo não rodar, vá em serviços e procure por mongo e aperte Play.
+
+Voce vai no cmd
+digita o comando mongo
+depois digita show dbs
+depois digite use aprendendoMongo(para usar o banco de dados )
+depois aperta show collections
+depois digite db.articles(que é o nome da coleção).find
+nisso ele vai retornar todos os dados que são salvo na coleção

@@ -14,7 +14,7 @@ com o comando mongo
 caso o comando mongo não funcione, voce abra outra CMD, mais deixa o que voce utilizou 
 mongo como comando aberto
 
-eutilizar o comando 
+e utilizar o comando 
 
 
 mongod
